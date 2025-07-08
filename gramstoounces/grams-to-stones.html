@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert grams to stones instantly with our free online calculator. Accurate and easy-to-use weight conversion tool.">
+    <meta name="keywords" content="grams to stones, weight converter, gram to stone conversion, weight calculator">
+    <link rel="canonical" href="https://gramstoounces.net/grams-to-stones.html">
+    <title>Grams to Stones Converter | Precise Weight Conversion Tool</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Grams to Stones Converter</h1>
+            <p>Instantly convert between grams and stones with precision. Our calculator provides accurate weight conversions for cooking, science, and everyday use.</p>
+        </header>
+        
+        <main>
+            <section class="card converter-card">
+                <h2>Weight Converter</h2>
+                <div class="converter-container">
+                    <div class="input-group">
+                        <label for="gram-input">Grams</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="gram-input" placeholder="0" min="0" step="any">
+                            <span class="unit">grams</span>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="stone-input">Stones</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="stone-input" placeholder="0" min="0" step="any">
+                            <span class="unit">stones</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="card info-card">
+                <h2>Conversion Formula</h2>
+                <p>To convert between grams and stones, use these formulas:</p>
+                <div class="formula">1 gram = 0.000157473 stones</div>
+                <div class="formula">1 stone = 6350.29318 grams</div>
+                <p>Enter a value in either field above to see the conversion result in the other field.</p>
+            </section>
+            
+            <section class="card info-card">
+                <h2>Common Conversions</h2>
+                <table class="conversion-table">
+                    <thead>
+                        <tr>
+                            <th>Grams</th>
+                            <th>Stones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1000 g</td>
+                            <td>0.157 st</td>
+                        </tr>
+                        <tr>
+                            <td>5000 g</td>
+                            <td>0.787 st</td>
+                        </tr>
+                        <tr>
+                            <td>6350 g</td>
+                            <td>1 st</td>
+                        </tr>
+                        <tr>
+                            <td>10000 g</td>
+                            <td>1.575 st</td>
+                        </tr>
+                        <tr>
+                            <td>50000 g</td>
+                            <td>7.874 st</td>
+                        </tr>
+                        <tr>
+                            <td>100000 g</td>
+                            <td>15.747 st</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section class="card info-card">
+                <h2>About Weight Units</h2>
+                <p>The gram (g) is a metric unit of weight defined as one thousandth of a kilogram. It's widely used in scientific contexts and in most countries worldwide.</p>
+                <p>The stone (st) is an imperial unit of weight equal to 14 pounds or approximately 6.35 kilograms. It's commonly used in the United Kingdom and Ireland for measuring human body weight.</p>
+            </section>
+            
+            <section class="card info-card">
+                <h2>Practical Applications</h2>
+                <p>Converting between grams and stones is essential for:</p>
+                <ul style="margin-left: var(--spacing-md); color: var(--color-text-secondary);">
+                    <li>Body weight measurements in the UK and Ireland</li>
+                    <li>Understanding weight references in British literature and media</li>
+                    <li>Converting between metric and imperial weight systems</li>
+                    <li>Historical weight measurements and references</li>
+                    <li>International fitness and health tracking</li>
+                </ul>
+            </section>
+            
+            <section class="card keywords-card">
+                <h2>Conversion to common weights</h2>
+                <ul class="keywords-list">
+                    <li><a href="index.html">grams to ounces</a></li>
+                    <li><a href="grams-to-grains.html">grams to grains</a></li>
+                    <li><a href="grams-to-drams.html">grams to drams</a></li>
+                    <li><a href="grams-to-pounds.html">grams to pounds</a></li>
+                    <li><a href="grams-to-quarters.html">grams to quarters</a></li>
+                    <li><a href="grams-to-hundredweights.html">grams to hundredweights</a></li>
+                    <li><a href="grams-to-shorttons.html">grams to shorttons</a></li>
+                    <li><a href="grams-to-longtons.html">grams to longtons</a></li>
+                    <li><a href="grams-to-tolas.html">grams to tolas</a></li>
+                    <li><a href="grams-to-kilograms.html">grams to kilograms</a></li>
+                </ul>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; <span id="current-year"></span> GramsToOunces.net | Precise Weight Conversion Tool</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Conversion functionality
+        const gramInput = document.getElementById('gram-input');
+        const stoneInput = document.getElementById('stone-input');
+        
+        // Conversion factors
+        const GRAM_TO_STONE = 0.000157473;
+        const STONE_TO_GRAM = 6350.29318;
+        
+        // Flag to prevent infinite loop
+        let isUpdating = false;
+        
+        // Convert grams to stones
+        function convertGramsToStones() {
+            if (isUpdating) return;
+            
+            isUpdating = true;
+            const gramValue = parseFloat(gramInput.value) || 0;
+            const stoneValue = gramValue * GRAM_TO_STONE;
+            
+            // Display result with 3 decimal places
+            stoneInput.value = stoneValue.toFixed(3);
+            
+            // Add glow effect on change
+            stoneInput.style.boxShadow = '0 0 8px rgba(255, 149, 0, 0.5)';
+            setTimeout(() => {
+                stoneInput.style.boxShadow = '';
+            }, 800);
+            
+            isUpdating = false;
+        }
+        
+        // Convert stones to grams
+        function convertStonesToGrams() {
+            if (isUpdating) return;
+            
+            isUpdating = true;
+            const stoneValue = parseFloat(stoneInput.value) || 0;
+            const gramValue = stoneValue * STONE_TO_GRAM;
+            
+            // Display result with 3 decimal places
+            gramInput.value = gramValue.toFixed(3);
+            
+            // Add glow effect on change
+            gramInput.style.boxShadow = '0 0 8px rgba(255, 149, 0, 0.5)';
+            setTimeout(() => {
+                gramInput.style.boxShadow = '';
+            }, 800);
+            
+            isUpdating = false;
+        }
+        
+        // Event listeners
+        gramInput.addEventListener('input', convertGramsToStones);
+        stoneInput.addEventListener('input', convertStonesToGrams);
+        
+        // Initialize
+        convertGramsToStones();
+    </script>
+</body>
+</html> 
