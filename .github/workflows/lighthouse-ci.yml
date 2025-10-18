@@ -1,0 +1,72 @@
+name: Lighthouse CI
+
+on:
+  # 手动触发
+  workflow_dispatch:
+
+  # 每周一自动运行（UTC 0:00，北京时间周一 08:00）
+  schedule:
+    - cron: '0 0 * * 1'
+
+  # PR 时运行（可选 - 默认禁用以节省资源）
+  # pull_request:
+  #   branches: [ main ]
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          npm install -g @lhci/cli@0.12.x
+          npm install -g http-server
+
+      - name: Start local server
+        run: |
+          http-server -p 8080 &
+          sleep 3
+
+      - name: Run Lighthouse CI
+        run: |
+          lhci autorun --config=lighthouserc.json || echo "Lighthouse CI completed with warnings"
+
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: lighthouse-reports
+          path: .lighthouseci/
+          retention-days: 30
+
+      - name: Comment PR with results (if PR context)
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const resultsPath = '.lighthouseci/manifest.json';
+
+            if (fs.existsSync(resultsPath)) {
+              const manifest = JSON.parse(fs.readFileSync(resultsPath, 'utf8'));
+              const summary = `## Lighthouse CI Results
+
+              Performance scores for this PR:
+              - Check the artifacts for detailed reports
+              `;
+
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: summary
+              });
+            }

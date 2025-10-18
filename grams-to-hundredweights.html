@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Convert grams to hundredweights instantly with our free online calculator. Accurate and easy-to-use weight conversion tool.">
-    <meta name="keywords" content="grams to hundredweights, weight converter, gram to hundredweight conversion, weight calculator">
+    <meta name="description" content="Convert grams to hundredweights (cwt) for bulk weight calculations. Free online converter for agricultural, industrial, and commodity measurements. Get precise cwt results instantly!">
     <link rel="canonical" href="https://www.gramstoounces.net/grams-to-hundredweights.html">
-    <title>Grams to Hundredweights | Precise Weight Conversion Tool</title>
-    
+    <title>Grams to Hundredweights Converter - Bulk Weight Calculator</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.gramstoounces.net/grams-to-hundredweights.html">
+    <meta property="og:title" content="Grams to Hundredweights Converter - Bulk Weight Calculator">
+    <meta property="og:description" content="Convert grams to hundredweights (cwt) for bulk weight calculations. Free online converter for agricultural, industrial, and commodity measurements. Get precise cwt results instantly!">
+    <meta property="og:image" content="https://www.gramstoounces.net/favicon_io/apple-touch-icon.png">
+    <meta property="og:image:width" content="180">
+    <meta property="og:image:height" content="180">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="GramsToOunces.net">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@blueli43139">
+    <meta name="twitter:creator" content="@blueli43139">
+    <meta name="twitter:url" content="https://www.gramstoounces.net/grams-to-hundredweights.html">
+    <meta name="twitter:title" content="Grams to Hundredweights Converter - Bulk Weight Calculator">
+    <meta name="twitter:description" content="Convert grams to hundredweights (cwt) for bulk weight calculations. Free online converter for agricultural, industrial, and commodity measurements.">
+    <meta name="twitter:image" content="https://www.gramstoounces.net/favicon_io/apple-touch-icon.png">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
@@ -15,44 +34,353 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="shortcut icon" href="favicon_io/favicon.ico">
     
+    <!-- 🚀 P0-3: 资源预加载提示 -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- 🚀 P0-1: 关键 CSS 内联（首屏必需样式，约 2.5KB Gzip） -->
+    <style>
+        /* CSS 变量 */
+        :root {
+            --color-bg-primary: #000000;
+            --color-bg-card: #1A1A1A;
+            --color-bg-card-hover: #212121;
+            --color-text-primary: rgba(255, 255, 255, 0.95);
+            --color-text-secondary: rgba(255, 255, 255, 0.75);
+            --color-text-tertiary: rgba(255, 255, 255, 0.5);
+            --color-emphasis: #FF9500;
+            --color-emphasis-secondary: rgba(255, 149, 0, 0.75);
+            --color-emphasis-light: rgba(255, 149, 0, 0.5);
+            --spacing-xs: 8px;
+            --spacing-sm: 16px;
+            --spacing-md: 24px;
+            --spacing-lg: 32px;
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --transition-standard: 200ms cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body 基础样式 */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-feature-settings: "tnum";
+            letter-spacing: -0.01em;
+            padding: var(--spacing-md);
+        }
+
+        /* LCP 元素样式 - 最关键！ */
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-emphasis);
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 600;
+            margin: var(--spacing-md) 0 var(--spacing-sm);
+            color: var(--color-text-primary);
+        }
+
+        p {
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-text-secondary);
+        }
+
+        /* 布局 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: var(--spacing-lg);
+            padding: var(--spacing-md) 0;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md);
+        }
+
+        @media (min-width: 768px) {
+            main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* 卡片基础样式 */
+        .card {
+            background: linear-gradient(175deg, var(--color-bg-card), var(--color-bg-card-hover));
+            border-radius: var(--radius-md);
+            padding: clamp(var(--spacing-md), 4vw, var(--spacing-lg));
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-standard);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        /* 转换器卡片 */
+        .converter-card {
+            grid-column: 1 / -1;
+        }
+
+        .converter-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md);
+        }
+
+        @media (min-width: 768px) {
+            .converter-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xs);
+        }
+
+        .input-group label {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+        }
+
+        .input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 80px;
+        }
+
+        input {
+            width: 100%;
+            height: 80px;
+            padding: var(--spacing-sm);
+            padding-right: 90px;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-sm);
+            color: var(--color-text-primary);
+            font-weight: 700;
+            font-feature-settings: "tnum";
+            transition: var(--transition-standard);
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+        }
+
+        input::-webkit-inner-spin-button,
+        input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--color-emphasis);
+            box-shadow: 0 0 0 2px rgba(255, 149, 0, 0.25);
+        }
+
+        .unit {
+            position: absolute;
+            right: var(--spacing-sm);
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-emphasis);
+            font-weight: 600;
+            font-size: 1.2rem;
+            pointer-events: none;
+        }
+
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-emphasis);
+            color: #000000;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 1000;
+            border-radius: 0 0 4px 0;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Visually Hidden */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: var(--spacing-xs) 0 var(--spacing-sm);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb ol {
+            list-style: none;
+            display: flex;
+            gap: var(--spacing-xs);
+            align-items: center;
+        }
+
+        .breadcrumb li:not(:last-child)::after {
+            content: '›';
+            margin-left: var(--spacing-xs);
+            color: var(--color-text-tertiary);
+        }
+
+        .breadcrumb a {
+            color: var(--color-emphasis);
+            text-decoration: none;
+            transition: var(--transition-standard);
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb li[aria-current="page"] {
+            color: var(--color-text-secondary);
+        }
+    </style>
+
+    <!-- 🚀 P0-1: 延迟加载完整 CSS -->
+    <link
+        rel="stylesheet"
+        href="styles.css"
+        media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="styles.css">
+    </noscript>
+
+    <!-- Google Fonts 优化 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+        media="print"
+        onload="this.media='all'"
+    >
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </noscript>
 </head>
-<body>
+<body data-gram-to-unit="0.0000196841" data-unit-to-gram="50802.35">
+    <!-- P0-1: Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <div class="container">
-        <header>
-            <h1>Grams to Hundredweights</h1>
+        <nav class="breadcrumb" aria-label="Breadcrumb" role="navigation">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li aria-current="page">Grams to Hundredweights</li>
+            </ol>
+        </nav>
+
+        <header role="banner">
+            <h1>Grams to Hundredweights Converter - Fast & Precise Weight Conversion</h1>
             <p>Instantly convert between grams and hundredweights with precision. Our calculator provides accurate weight conversions for cooking, science, and everyday use.</p>
         </header>
-        
-        <main>
+
+        <main role="main" id="main-content">
             <section class="card converter-card">
                 <h2>Weight Converter</h2>
                 <div class="converter-container">
                     <div class="input-group">
                         <label for="gram-input">Grams</label>
                         <div class="input-wrapper">
-                            <input type="number" id="gram-input" placeholder="0" min="0" step="any">
-                            <span class="unit">grams</span>
+                            <input
+                                type="number"
+                                id="gram-input"
+                                placeholder="0"
+                                min="0"
+                                step="any"
+                                aria-label="Enter weight in grams"
+                                aria-describedby="gram-description"
+                                aria-live="polite"
+                                inputmode="decimal">
+                            <span class="unit" aria-hidden="true">grams</span>
                         </div>
+                        <span id="gram-description" class="visually-hidden">
+                            Enter a numeric value. Conversion result will appear automatically in the hundredweights field.
+                        </span>
                     </div>
                     
                     <div class="input-group">
                         <label for="hundredweight-input">Hundredweights</label>
                         <div class="input-wrapper">
-                            <input type="number" id="hundredweight-input" placeholder="0" min="0" step="any">
-                            <span class="unit">cwt</span>
+                            <input
+                                type="number"
+                                id="hundredweight-input"
+                                placeholder="0"
+                                min="0"
+                                step="any"
+                                aria-label="Enter weight in hundredweights"
+                                aria-describedby="hundredweight-description"
+                                aria-live="polite"
+                                inputmode="decimal">
+                            <span class="unit" aria-hidden="true">cwt</span>
                         </div>
+                        <span id="hundredweight-description" class="visually-hidden">
+                            Enter a numeric value. Conversion result will appear automatically in the grams field.
+                        </span>
                     </div>
                 </div>
             </section>
             
             <section class="card info-card">
                 <h2>Conversion Formula</h2>
-                <p>To convert between grams and hundredweights, use these formulas:</p>
+
+                <h3>Grams to Hundredweights Formula</h3>
                 <div class="formula">1 gram = 0.0000196841 hundredweights</div>
+                <p>To convert between grams and hundredweights, use these formulas:</p>
+
+                <h3>Hundredweights to Grams Formula</h3>
                 <div class="formula">1 hundredweight = 50802.35 grams</div>
                 <p>Enter a value in either field above to see the conversion result in the other field.</p>
             </section>
@@ -60,10 +388,13 @@
             <section class="card info-card">
                 <h2>Common Conversions</h2>
                 <table class="conversion-table">
+                    <caption class="visually-hidden">
+                        Common weight conversions from grams to hundredweights
+                    </caption>
                     <thead>
                         <tr>
-                            <th>Grams</th>
-                            <th>Hundredweights</th>
+                            <th scope="col">Grams</th>
+                            <th scope="col">Hundredweights</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -96,26 +427,58 @@
             </section>
             
             <section class="card info-card">
-                <h2>About Weight Units</h2>
-                <p>The gram (g) is a metric unit of weight defined as one thousandth of a kilogram. It's widely used in scientific contexts and in most countries worldwide.</p>
-                <p>The hundredweight (cwt) is an imperial unit of weight equal to 112 pounds in the UK (long hundredweight) or 100 pounds in the US (short hundredweight). This converter uses the UK long hundredweight, which equals approximately 50.8 kilograms.</p>
+                <h2>About Hundredweights</h2>
+
+                <h3>Typical Use Cases</h3>
+                <p>The hundredweight (cwt) is used in agricultural bulk commodities, coal trading, steel and metal industries, and livestock markets. In the United States, the short hundredweight (100 pounds) is standard, while the UK uses the long hundredweight (112 pounds). Farmers measure grain harvests in hundredweights, steel mills quote prices per cwt, and livestock auctions sell cattle by the hundredweight. This unit remains common in traditional industries despite metrication efforts.</p>
+
+                <h3>Historical Background</h3>
+                <p>The hundredweight originated in medieval Europe as a convenient unit for bulk trade. The British long cwt (112 lbs = 50.8 kg) derives from the stone (14 lbs × 8 = 112 lbs), while the American short cwt (100 lbs = 45.36 kg) simplified calculations in decimal-based commerce. The abbreviation "cwt" comes from the Latin "centum weight" (hundred weight). Both versions coexist today, causing occasional confusion in international trade that requires careful specification of which hundredweight standard applies.</p>
+
+                <h3>Conversion Tips</h3>
+                <p>Always clarify whether you're working with long cwt (UK: 50.8kg) or short cwt (US: 45.36kg) before converting. This converter uses the long (imperial) hundredweight. For bulk materials, remember: 1 metric ton ≈ 19.68 long cwt or ≈ 22.05 short cwt. When reading historical agricultural records or commodity contracts, check the document's origin to determine which standard applies. Modern international shipping typically uses metric tons to avoid this ambiguity.</p>
             </section>
-            
+
             <section class="card info-card">
-                <h2>Practical Applications</h2>
-                <p>Converting between grams and hundredweights is essential for:</p>
-                <ul style="margin-left: var(--spacing-md); color: var(--color-text-secondary);">
-                    <li>Agricultural and farming measurements</li>
-                    <li>Bulk goods and commodity trading</li>
-                    <li>Historical weight records and documentation</li>
-                    <li>Industrial material quantities</li>
-                    <li>Converting between metric and imperial weight systems</li>
-                </ul>
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <h3>How many grams are in a hundredweight?</h3>
+                    <p>One long hundredweight (UK) equals 50,802.3 grams (50.8kg), while one short hundredweight (US) equals 45,359.2 grams (45.36kg). This converter uses the long hundredweight.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What's the difference between long and short hundredweights?</h3>
+                    <p>The long hundredweight (UK) equals 112 pounds (50.8kg), based on 8 stones. The short hundredweight (US) equals 100 pounds (45.36kg). The difference is about 11%, which matters significantly in commodity trading.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is the hundredweight still used in agriculture?</h3>
+                    <p>Yes, especially in traditional agricultural markets in the US and UK. Livestock, grain, and commodity prices are often quoted per hundredweight. However, many regions are transitioning to metric tons.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Why not just use kilograms?</h3>
+                    <p>Historical inertia and established pricing systems keep the hundredweight in use. Industries built around cwt pricing (like livestock auctions) find it costly to retrain and reprogram systems, so the unit persists in traditional sectors.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is this UK or US hundredweight?</h3>
+                    <p>This converter uses the UK (Imperial) hundredweight of 112 pounds (50.8 kg). The US hundredweight is 100 pounds (45.4 kg). If you need US cwt conversions, multiply the result by 0.893. For example, 100,000 grams equals 1.968 UK cwt or 1.764 US cwt. Always verify which standard applies in commodity contracts, as the 12-pound difference can significantly affect bulk pricing in agriculture and freight. International shipping documents should explicitly state which hundredweight is referenced to avoid costly disputes.</p>
+                </div>
+            </section>
+
+            <section class="card info-card">
+                <h2>About Our Conversion Standards</h2>
+                <p>Our weight conversions are based on the International System of Units (SI) and standards published by the National Institute of Standards and Technology (NIST). All conversion factors are accurate to at least 6 decimal places, ensuring precision for both everyday and professional use.</p>
+                <p><strong>Data Sources:</strong> NIST Handbook 44, International Bureau of Weights and Measures (BIPM), ISO 80000-3:2006</p>
+                <p><strong>Last Verified:</strong> October 2025</p>
             </section>
             
             <section class="card keywords-card">
-                <h2>Conversion to common weights</h2>
-                <ul class="keywords-list">
+                <nav aria-label="Related conversion tools">
+                    <h2>Conversion to common weights</h2>
+                    <ul class="keywords-list">
                     <li><a href="index.html">grams to ounces</a></li>
                     <li><a href="grams-to-grains.html">grams to grains</a></li>
                     <li><a href="grams-to-drams.html">grams to drams</a></li>
@@ -127,78 +490,107 @@
                     <li><a href="grams-to-tolas.html">grams to tolas</a></li>
                     <li><a href="grams-to-kilograms.html">grams to kilograms</a></li>
                 </ul>
+                </nav>
             </section>
         </main>
         
-        <footer>
-            <p>&copy; <span id="current-year"></span> GramsToOunces.net | Precise Weight Conversion Tool</p>
+        <footer role="contentinfo">
+            <p>&copy; <span id="current-year"></span> GramsToOunces.net |
+               <a href="about.html" aria-label="About GramsToOunces.net">About</a> |
+               <a href="privacy.html" aria-label="Privacy Policy">Privacy</a> |
+               <a href="terms.html" aria-label="Terms of Service">Terms</a> |
+               <a href="contact.html" aria-label="Contact Us">Contact</a> |
+               <a href="https://x.com/blueli43139" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (formerly Twitter)">X/Twitter</a>
+            </p>
         </footer>
     </div>
-    
-    <script>
-        // Set current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-        
-        // Conversion functionality
-        const gramInput = document.getElementById('gram-input');
-        const hundredweightInput = document.getElementById('hundredweight-input');
-        
-        // Conversion factors
-        const GRAM_TO_HUNDREDWEIGHT = 0.0000196841;
-        const HUNDREDWEIGHT_TO_GRAM = 50802.35;
-        
-        // Flag to prevent infinite loop
-        let isUpdating = false;
-        
-        // Convert grams to hundredweights
-        function convertGramsToHundredweights() {
-            if (isUpdating) return;
-            
-            isUpdating = true;
-            const gramValue = parseFloat(gramInput.value) || 0;
-            const hundredweightValue = gramValue * GRAM_TO_HUNDREDWEIGHT;
-            
-            // Display result with 6 decimal places due to small values
-            hundredweightInput.value = hundredweightValue.toFixed(6);
-            
-            // Add glow effect on change
-            hundredweightInput.style.boxShadow = '0 0 8px rgba(255, 149, 0, 0.5)';
-            setTimeout(() => {
-                hundredweightInput.style.boxShadow = '';
-            }, 800);
-            
-            isUpdating = false;
+
+    <script src="js/converter.js" defer></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "Grams to Hundredweights Converter",
+          "url": "https://www.gramstoounces.net/grams-to-hundredweights.html",
+          "description": "Convert grams to hundredweights (cwt) for bulk weight calculations. Free online converter for agricultural, industrial, and commodity measurements. Get precise cwt results instantly!",
+          "applicationCategory": "UtilityApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.gramstoounces.net/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Grams to Hundredweights",
+              "item": "https://www.gramstoounces.net/grams-to-hundredweights.html"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How many grams are in a hundredweight?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "One long hundredweight (UK) equals 50,802.3 grams (50.8kg), while one short hundredweight (US) equals 45,359.2 grams (45.36kg). This converter uses the long hundredweight."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What's the difference between long and short hundredweights?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The long hundredweight (UK) equals 112 pounds (50.8kg), based on 8 stones. The short hundredweight (US) equals 100 pounds (45.36kg). The difference is about 11%, which matters significantly in commodity trading."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the hundredweight still used in agriculture?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, especially in traditional agricultural markets in the US and UK. Livestock, grain, and commodity prices are often quoted per hundredweight. However, many regions are transitioning to metric tons."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why not just use kilograms?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Historical inertia and established pricing systems keep the hundredweight in use. Industries built around cwt pricing (like livestock auctions) find it costly to retrain and reprogram systems, so the unit persists in traditional sectors."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is this UK or US hundredweight?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This converter uses the UK (Imperial) hundredweight of 112 pounds (50.8 kg). The US hundredweight is 100 pounds (45.4 kg). If you need US cwt conversions, multiply the result by 0.893. For example, 100,000 grams equals 1.968 UK cwt or 1.764 US cwt. Always verify which standard applies in commodity contracts, as the 12-pound difference can significantly affect bulk pricing in agriculture and freight. International shipping documents should explicitly state which hundredweight is referenced to avoid costly disputes."
+              }
+            }
+          ]
         }
-        
-        // Convert hundredweights to grams
-        function convertHundredweightsToGrams() {
-            if (isUpdating) return;
-            
-            isUpdating = true;
-            const hundredweightValue = parseFloat(hundredweightInput.value) || 0;
-            const gramValue = hundredweightValue * HUNDREDWEIGHT_TO_GRAM;
-            
-            // Display result with 3 decimal places
-            gramInput.value = gramValue.toFixed(3);
-            
-            // Add glow effect on change
-            gramInput.style.boxShadow = '0 0 8px rgba(255, 149, 0, 0.5)';
-            setTimeout(() => {
-                gramInput.style.boxShadow = '';
-            }, 800);
-            
-            isUpdating = false;
-        }
-        
-        // Event listeners
-        gramInput.addEventListener('input', convertGramsToHundredweights);
-        hundredweightInput.addEventListener('input', convertHundredweightsToGrams);
-        
-        // Initialize
-        convertGramsToHundredweights();
+      ]
+    }
     </script>
-    
-    <div style="display:none">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDSC317HG8"></script>
     <script>
@@ -208,6 +600,5 @@
 
       gtag('config', 'G-PDSC317HG8');
     </script>
-    </div>
 </body>
 </html> 

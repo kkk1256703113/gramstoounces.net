@@ -65,6 +65,14 @@ h2 {
     color: var(--color-text-primary);
 }
 
+h3 {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    font-weight: 600;
+    margin: var(--spacing-sm) 0 var(--spacing-xs);
+    color: var(--color-text-primary);
+    line-height: 1.4;
+}
+
 p {
     margin-bottom: var(--spacing-sm);
     color: var(--color-text-secondary);
@@ -289,6 +297,20 @@ input:hover {
     font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
 
+.info-card h3 {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    font-weight: 600;
+    margin: var(--spacing-sm) 0 var(--spacing-xs);
+    color: var(--color-text-primary);
+    line-height: 1.4;
+}
+
+/* FAQ 项目中的 H3 特殊样式(为后续FAQ准备) */
+.faq-item h3 {
+    color: var(--color-emphasis-secondary);
+    margin-bottom: var(--spacing-xs);
+}
+
 .info-card p {
     font-size: 0.9rem;
     line-height: 1.4;
@@ -386,4 +408,91 @@ footer {
 
 .info-card:nth-of-type(4) {
     --animation-order: 6;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    padding: var(--spacing-xs) 0 var(--spacing-sm);
+    font-size: 0.9rem;
+}
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-xs);
+    align-items: center;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '›';
+    margin-left: var(--spacing-xs);
+    color: var(--color-text-tertiary);
+}
+
+.breadcrumb a {
+    color: var(--color-emphasis);
+    text-decoration: none;
+    transition: var(--transition-standard);
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: var(--color-emphasis-interactive);
+}
+
+.breadcrumb li[aria-current="page"] {
+    color: var(--color-text-secondary);
+}
+
+/* FAQ Styles */
+.faq-item {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.faq-item h3 {
+    color: var(--color-emphasis-secondary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.faq-item p {
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Accessibility: Skip Navigation Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-emphasis);
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 1000;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Accessibility: Visually Hidden (screen reader only) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }

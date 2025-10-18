@@ -1,0 +1,36 @@
+# GramsToOunces.net Robots.txt
+# Last updated: 2025-10-17
+
+User-agent: *
+Allow: /
+
+# Allow all crawlers to access HTML pages
+Allow: /*.html$
+
+# Allow access to CSS and JavaScript
+Allow: /styles.css
+Allow: /js/
+
+# Allow access to images
+Allow: /images/
+Allow: /favicon_io/
+
+# Disallow crawling tracking scripts
+Disallow: /gtag/
+Disallow: /*.json$
+
+# Crawl-delay for polite bots (optional)
+# Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.gramstoounces.net/sitemap.xml
+
+# Common bot-specific rules (optional)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

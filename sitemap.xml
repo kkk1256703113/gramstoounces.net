@@ -2,68 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.gramstoounces.net/</loc>
-    <lastmod>2024-05-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.gramstoounces.net/grams-to-grains.html</loc>
-    <lastmod>2024-05-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gramstoounces.net/grams-to-drams.html</loc>
-    <lastmod>2024-05-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gramstoounces.net/grams-to-pounds.html</loc>
-    <lastmod>2024-05-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gramstoounces.net/grams-to-stones.html</loc>
-    <lastmod>2024-05-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gramstoounces.net/grams-to-quarters.html</loc>
-    <lastmod>2024-05-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gramstoounces.net/grams-to-hundredweights.html</loc>
-    <lastmod>2024-05-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gramstoounces.net/grams-to-shorttons.html</loc>
-    <lastmod>2024-05-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gramstoounces.net/grams-to-longtons.html</loc>
-    <lastmod>2024-05-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gramstoounces.net/grams-to-tolas.html</loc>
-    <lastmod>2024-05-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gramstoounces.net/grams-to-kilograms.html</loc>
-    <lastmod>2024-05-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gramstoounces.net/about.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.gramstoounces.net/privacy.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.gramstoounces.net/terms.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.gramstoounces.net/contact.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset> 
